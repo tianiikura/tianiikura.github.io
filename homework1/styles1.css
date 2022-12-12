@@ -1,0 +1,364 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #606060;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #0844a4;
+    opacity: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.screen {
+    width: 100vw;
+    height: 100vh;
+    
+    box-sizing: border-box;
+    display:flex;
+    flex-direction: column;
+}
+
+.heroPage {
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;    
+    background-image: url("main.jpg");
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    background-color: #cccccc;
+    background-blend-mode: overlay;
+}
+
+.heroPage > div {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #0844a4;
+    width: 100%;
+    max-width: 1000px;
+    height: 100%;
+    max-height: 400px;
+    align-items: center; 
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.heroPage div a:nth-child(2) {
+    width: 240px;
+    height: 80px;
+    background-color: #0a27cf;
+    color: #ffffff;
+    font-size: 36px;
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 80px;
+}
+
+h1 {
+    font-size: 90px;
+}
+
+h2 {
+    font-size: 64px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 50px;
+}
+
+.textBlock h3::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50' preserveAspectRatio='xMidYMid meet' viewBox='0 0 24 24'%3E%3Cpath fill='%23ccc' d='m10.6 13.8l-2.175-2.175q-.275-.275-.687-.262q-.413.012-.688.287q-.275.275-.275.7q0 .425.275.7L9.9 15.9q.275.275.7.275q.425 0 .7-.275l5.675-5.675q.275-.275.263-.688q-.013-.412-.288-.687q-.275-.275-.7-.275q-.425 0-.7.275ZM12 22q-2.075 0-3.9-.788q-1.825-.787-3.175-2.137q-1.35-1.35-2.137-3.175Q2 14.075 2 12t.788-3.9q.787-1.825 2.137-3.175q1.35-1.35 3.175-2.138Q9.925 2 12 2t3.9.787q1.825.788 3.175 2.138q1.35 1.35 2.137 3.175Q22 9.925 22 12t-.788 3.9q-.787 1.825-2.137 3.175q-1.35 1.35-3.175 2.137Q14.075 22 12 22Zm0-10Zm0 8q3.325 0 5.663-2.337Q20 15.325 20 12t-2.337-5.663Q15.325 4 12 4T6.338 6.337Q4 8.675 4 12t2.338 5.663Q8.675 20 12 20Z'/%3E%3C/svg%3E ");
+    content: " ";
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    vertical-align: bottom;
+    margin-right: 5px;
+}
+
+.menuHeader {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    background-color: transparent;
+    height: 10vh;
+    position: relative;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    width: 40vw;
+    position: absolute;
+    right: 5.21vw;
+    top: 5vh;
+    font-size: 20px;
+}
+
+.menu div {
+    border-right: solid;
+    border-right-width: 2px;
+    border-right-color: #D9D9D9;
+    flex-grow: 1;
+    text-align: center;
+    width: 100%;
+}
+
+.menuButton a {
+    color: #606060;
+    text-decoration: none;
+}
+
+.chapterName {
+    margin-top: 1vh;
+}
+
+.mainBlock {
+    display: flex;
+    flex-direction: row;    
+    align-items: center;
+    margin-left: 5.21vw;
+    margin-right: 5.21vw;
+    justify-content:center;
+    flex-grow: 1;
+}
+
+.textBlock {
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    margin: 0vh 0vw 0vh 0vw;
+}
+
+.screen2 > div:nth-child(1) {
+   width: 50%;
+}
+
+.screen2 > div:nth-child(2) {
+    width: 100%;
+}
+
+.portrait img {
+    width: 100%;
+    max-width: 352px;
+    height: 100%;
+    max-height: 525px; 
+}
+
+.blocks {
+    display: flex;
+    flex-direction: row;  
+}
+
+.blocks > div {
+    width: 100%;
+}
+
+.top {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    font-size: 24px;
+    margin-right:  5.21vw;
+    margin-bottom: 3vh;
+    
+}
+
+.top a {
+    color: #606060;
+    text-decoration: none;
+}
+
+.diagram {
+    width: 25vw;
+    aspect-ratio: 1 / 1;
+    background: conic-gradient( 
+       black 0deg 1deg,
+       red 1deg 6deg,
+       black 6deg 7deg,
+       orange 7deg 18deg,
+       black 18deg 19deg,
+       yellow 19deg 45deg,
+       black 19deg 20deg, 
+       
+       green 46deg 90deg,
+       black 90deg 91deg, 
+       blue 91deg 140deg,
+       black 140deg 141deg,
+       pink 141deg 200deg,
+       
+       black 200deg 201deg, 
+       purple 200deg
+       
+    );
+    border-radius: 100%;
+    border-style: solid;
+    box-sizing: border-box;
+    border: black solid 2px;
+    
+  }
+  
+  .diagram::before {
+    content: " ";
+    background: white;
+    position: relative;
+    width: 60%;
+    height: 60%;
+    display: block;
+    border-radius: 100%;
+    border-style: solid;
+    box-sizing: border-box;
+    border: black solid 2px;
+    margin: 20%;
+  }
+
+.expirience {
+   font-size: 20px;
+   justify-content: space-between;
+}
+
+.expirience p {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.squares {
+    display: flex;
+    justify-content: center;
+}
+
+.squares > div {
+    width: 80px;
+    height: 20px;
+    border: 1px solid black;
+    color: black;
+    border-radius: 20px;
+    text-align: center;
+    vertical-align: center;
+    margin: 0vh 1vw 0vh 0vw;
+} 
+
+#ba {
+    background-color: pink;
+}
+#ux{
+    background-color: blue;
+}
+
+#qa {
+    background-color: green;
+}
+
+#banking {
+    background-color: purple;
+}
+
+#html {
+    background-color: yellow;
+}
+
+#css {
+    background-color: orange;
+}
+
+#js {
+    background-color: red;
+}
+
+.interests {
+    flex-direction: column;
+    height: 100%;
+}
+
+.interests > div{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+    margin-top: 2vh;
+    align-items: center;
+    margin-bottom: 2vh;
+}
+
+.interests img {
+    max-width:500px;
+    max-height: 335px;
+    height: 38vh;
+}
+
+.interests p {
+    margin: 0vh 10vw 0vh 10vw;
+    line-height: 1.5em;
+}
+
+.lastpage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.lastpage > div {
+    flex-grow: 1;
+}
+
+.lastpage p {
+    margin-top: 10vh;
+}
+
+.message textarea {
+    width: 50vw;
+    height:20vh;
+    border: 2px solid #0844a4;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+}
+
+.info input {
+    margin-top: 2vh;
+    margin-right: 1vw;
+    height: 5vh;
+    width: 17vw;
+    border: 2px solid #0844a4;
+}
+
+input[type="submit"] {
+    margin-top: 2vh;
+    margin-right: 0;
+    height: 5.8vh;
+    width: 12.8vw;
+    border: 2px solid #606060;
+    color: #ffffff;
+    background-color: #0a27cf;
+    border-radius: 2px;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.socials {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2vh;
+}
+
+.socials svg {
+    margin-right: 0.5vw;
+    margin-left: 0.5vw;
+}
