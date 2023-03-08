@@ -76,12 +76,16 @@ $formInputBackground: #EEEEEE;
     width: 278/$vw;
     max-height: 55px;
     max-width: 278px;
-    min-width: 175px;
+    min-width: 250px;
+    min-height: 55px;
     border-radius: 20px 0px;
     background-color: $buttonBackground;
     display: flex;
+    flex-flow: row wrap;
     justify-content: center;
     align-items: center;
+    align-content: center;
+    text-align: center;
 }
 
 @mixin filterButton {
@@ -279,6 +283,7 @@ main > section {
 .hero-page__photo img{
     width: 715/$vw;
     max-width: 715px;
+    min-width: 280px;
     height: 613px;
     border-radius: 140px 0px;
     object-fit: cover;
@@ -304,12 +309,16 @@ main > section {
     position: relative;
 }
 
-.what-we-do__subtitle {
+.subtitle {
     @include subtitle;
+    display: flex;
+    flex-flow: row wrap;
 }
 
-.what-we-do__title {
-    @include titleFont;
+.title {
+    @include secondaryTitleFont;
+    display: flex;
+    flex-flow: row wrap;
 }
 
 .what-we-do-filter-block {
@@ -339,6 +348,7 @@ main > section {
     display: flex;
     flex-flow: row wrap;
     gap: 95/$vw;
+    justify-content: center;
 }
 
 .what-we-do__info-block > div {
@@ -442,6 +452,7 @@ main > section {
 .about-us__photo > img {
     width: 680/$vw;
     max-width: 680px;
+    min-width: 280px;
     height: 712px;
     border-radius: 140px 0px;
     object-fit: cover;
@@ -469,13 +480,11 @@ main > section {
     flex-flow: row wrap;
 }
 
-.about-us-info__subtitle {
-    @include subtitle;
+.about-us-info .subtitle {
     margin-bottom: 60/$vw;
 }
 
-.about-us-info__title {
-    @include secondaryTitleFont;
+.about-us-info .title {
     margin-bottom: 15/$vw;
     max-width: 649px;
 }
@@ -517,6 +526,7 @@ main > section {
     position: relative;
     max-width: 100%;
     background-color: #F8F8F8;
+    align-items: center;
 
     @media screen and (max-width: 760px) {
         display: none;
@@ -536,18 +546,21 @@ main > section {
     display: flex;
     flex-flow: column wrap;
     margin: 80/$vw 0 90/$vw;
+
 }
 
 .completed-work__title * {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
+    text-align: center;
 }
 
 .completed-work-info {
     margin-bottom: 200/$vw;
     display: flex;
     gap: 220/$vw;
+    justify-content: center;
 }
 
 .completed-work-item {
@@ -612,25 +625,28 @@ main > section {
 }
 
 .testimonials {
-    margin: 100/$vw 0;
+    margin: 100/$vw 0 240/$vw;
     display: flex;
     flex-flow: column wrap;
-    justify-content: center;
-    align-content: center;
+
+    div:nth-child(3) {
+        justify-content: flex-end;
+    }
 }
 
-.testimonials__subtitle {
-    @include subtitle;
+.testimonials .subtitle {
     margin-bottom: 40/$vw;
+    align-self: center;
 }
 
-.testimonials__title {
-    @include secondaryTitleFont;
+.testimonials .title {
+    align-self: center;
 }
 
 .testimonials__slider {
     display: flex;
     gap: 50px;
+    margin-bottom: 85/$vw;
     div {
         width: 30px;
         height: 29px;
@@ -651,6 +667,10 @@ main > section {
 
 .testimonials-reviews-block {
     display: flex;
+    flex-flow: row wrap;
+    align-self: center;
+    gap: 155/$vw;
+    justify-content: center;
 }
 
 .review-item {
@@ -664,13 +684,260 @@ main > section {
     justify-content: center;
     align-items: center;
     position: relative;
+    padding: 10px 20px 10px 85px;
+    box-sizing: border-box;
 
     @media screen and (max-width:760px) {
-        width: 571/$vw;
+        min-width: 571/$vw;
+        width: 100%;
+        max-width: 571px;
         min-height: 226px;
+        height: 100%;
     }
 }
 
 .review-item__customer-photo {
+    position: absolute;
+    width: 130px;
+    height: 131px;
+    top: 45px;
+    left: -65px;
+    border-radius: 35px 0px;
+    font-family: $fontFamily;
+
+    img {
+        max-width: 130px;
+        width: 130/$vw;
+        max-height: 130px;
+        height: 130/$vw;
+        min-width: 100px;
+        min-height: 100px;
+        border-radius: 35px 0px;
+        object-fit: cover;
+    }
+}
+
+.review-item__deco {
+    position: absolute;
+    top: 25px;
+    right: 40px;
+}
+
+.review-item__customer-info {
+    .review-item__customer-name {
+        color:#212121;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 33px;
+        display: flex;
+        align-items: baseline;
+    }
+    .review-item__customer-position {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        color: #646464;
+    }
+    .review-item__text {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 28px;
+        color: #646464;
+    }
+}
+
+.news {
+    display: flex;
+    flex-flow: column wrap;
+    .subtitle, .title {
+        text-align: center;
+        display: flex;
+        flex-flow: row wrap;
+        align-self: center;
+    }
+}
+
+.news-block {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin-bottom: 120/$vw;
+}
+
+.news-item {
+    margin-top: 80/$vw;
+    max-width: 603px;
+    width: 603/$vw;
+    min-width: 300px;
+}
+
+.news-item__photo {
+    display: flex;
+    position: relative;
+    max-width: 555px;
+    min-width: 300px;
+    max-height: 387px;
+    min-height: 200px;
+    width: 555/$vw;
+    height: 387/$vw;
+    border-radius: 100px 0px;
+    margin-bottom: 60px;
+    img {
+        width: 555/$vw;
+        min-width: 280px;
+        height: 387/$vw;
+        min-height: 200px;
+        border-radius: 100px 0px;
+        object-fit: cover;
+    }
+
+    .news-item__deco {
+        @include photoDecor;
+        max-width: 555px;
+        max-height: 387px;
+        width: 555/$vw;
+        min-width: 300px;
+        height: 387/$vw;
+        min-height: 200px;
+        border-radius: 100px 0px;
+        top: 15px;
+        left: 15px;
+    }
+}
+
+.news-item__title {
+    @include textFont;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 28px;
+    color: #212121;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.news-item__text {
+    display: flex;
+    flex-flow: row wrap;
+    @include textFont;
+}
+
+.news-item__button {
+    @include button;
+    margin-top: 45/$vw;
+}
+
+.sign-up-form {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.sign-up-form .title {
+    margin: 80/$vw 0 37/$vw;
+}
+
+.sign-up-form__deco {
+    width: 461px;
+    height: 0px;
+    border: 1px solid #C4C4C4;
+    align-self: center;
+    margin-bottom: 40/$vw;
+}
+
+.sign-up-form__subtitle {
+    max-width: 647px;
+    width: 647/$vw;
+    min-width: 300px;
+    @include textFont;
+    text-align: center;
+    align-self: center;
+    margin-bottom: 36/$vw;
+}
+
+.sign-up-form form {
+    align-self: center;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 55px;
+    text-align: center;
+    color: #646464;
     
+    .form-name {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 97/$vw;
+        margin-bottom: 58/$vw;
+        input {
+            max-width: 317px;
+            width: 317/$vw;
+            height: 50px;
+            background: #EEEEEE;
+            border-radius: 20px 0px;
+            border: none;
+            min-width: 300px;
+        }
+    }
+
+    input {
+        max-width: 772px;
+        min-width: 300px;
+        width: 772/$vw;
+        height: 50px;
+        background: #EEEEEE;
+        border-radius: 20px 0px;
+        border: none;
+        padding: 5px 20px;
+        box-sizing: border-box;
+    }    
+    .button {
+        @include button;
+        height: 50px;
+        margin: 90px 0 100px;
+    }
+}
+
+footer {
+    display: flex;
+    flex-flow: column wrap;
+    background-color:  #F8F8F8;
+    align-content: center;
+    padding: 93/$vw 0 0 0;
+    box-sizing: border-box;
+    @include textFont;
+    line-height: 40px;
+
+    .footer-navigation {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 60px;
+        justify-content: center;
+        margin-bottom: 70/$vw;
+    }
+    .footer-navigation > div {
+        display: flex;
+        flex-flow: column;
+    }
+    .footer-navigation > div > div:nth-child(1) {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 40px;
+        color: #212121;
+    }
+}
+
+.footer__slogan {
+    max-width: 350px;
+    width: 350/$vw;
+    min-width: 200px;
+}
+
+.copywriting {
+    text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
 }
