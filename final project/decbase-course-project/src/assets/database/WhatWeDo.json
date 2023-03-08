@@ -1,0 +1,80 @@
+[
+    {
+        "category": "INTERIOR DESIGN",
+        "title" : "Interior Design1",
+        "text": "Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.",
+        "icon": "https://images.weserv.nl/?url=https%3A%2F%2Fdrive.google.com%2Fuc%3Fexport%3Dview%26id%3D1eZRNNS99phYyfqrjyzN-rDiXXGPZIXgC&_=2"
+    },
+    {
+        "category": "INTERIOR DESIGN",
+        "title" : "Interior Design2",
+        "text": "Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.",
+        "icon": "https://images.weserv.nl/?url=https%3A%2F%2Fdrive.google.com%2Fuc%3Fexport%3Dview%26id%3D1eZRNNS99phYyfqrjyzN-rDiXXGPZIXgC&_=2"
+    },
+    {
+        "category": "INTERIOR DESIGN",
+        "title" : "Interior Design3",
+        "text": "Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.",
+        "icon": "https://images.weserv.nl/?url=https%3A%2F%2Fdrive.google.com%2Fuc%3Fexport%3Dview%26id%3D1eZRNNS99phYyfqrjyzN-rDiXXGPZIXgC&_=2"
+    },
+    {
+        "category": "INTERIOR DESIGN",
+        "title" : "Interior Design4",
+        "text": "Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.",
+        "icon": "https://images.weserv.nl/?url=https%3A%2F%2Fdrive.google.com%2Fuc%3Fexport%3Dview%26id%3D1eZRNNS99phYyfqrjyzN-rDiXXGPZIXgC&_=2"
+    },
+    {
+        "category": "INTERIOR DESIGN",
+        "title" : "Interior Design5",
+        "text": "Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.",
+        "icon": "https://images.weserv.nl/?url=https%3A%2F%2Fdrive.google.com%2Fuc%3Fexport%3Dview%26id%3D1eZRNNS99phYyfqrjyzN-rDiXXGPZIXgC&_=2"
+    },
+    {
+        "category": "ARCHITECTURE",
+        "title" : "Architecture1",
+        "text": "Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.",
+        "icon": "https://images.weserv.nl/?url=https%3A%2F%2Fdrive.google.com%2Fuc%3Fexport%3Dview%26id%3D13kJcYMvLkdBsZE4LHHQ1SLzhmo01of4G&_=2"
+    },
+    {
+        "category": "ARCHITECTURE",
+        "title" : "Architecture2",
+        "text": "Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.",
+        "icon": "https://images.weserv.nl/?url=https%3A%2F%2Fdrive.google.com%2Fuc%3Fexport%3Dview%26id%3D13kJcYMvLkdBsZE4LHHQ1SLzhmo01of4G&_=2"
+    },
+    {
+        "category": "ARCHITECTURE",
+        "title" : "Architecture3",
+        "text": "Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.",
+        "icon": "https://images.weserv.nl/?url=https%3A%2F%2Fdrive.google.com%2Fuc%3Fexport%3Dview%26id%3D13kJcYMvLkdBsZE4LHHQ1SLzhmo01of4G&_=2"
+    },
+    {
+        "category": "ARCHITECTURE",
+        "title" : "Architecture4",
+        "text": "Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.",
+        "icon": "https://images.weserv.nl/?url=https%3A%2F%2Fdrive.google.com%2Fuc%3Fexport%3Dview%26id%3D13kJcYMvLkdBsZE4LHHQ1SLzhmo01of4G&_=2"
+    },
+    {
+        "category": "ARCHITECTURE",
+        "title" : "Architecture5",
+        "text": "Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.",
+        "icon": "https://images.weserv.nl/?url=https%3A%2F%2Fdrive.google.com%2Fuc%3Fexport%3Dview%26id%3D13kJcYMvLkdBsZE4LHHQ1SLzhmo01of4G&_=2"
+    },
+    {
+        "category": "PLANNING",
+        "title" : "Planning1",
+        "text": "Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.",
+        "icon": "https://images.weserv.nl/?url=https%3A%2F%2Fdrive.google.com%2Fuc%3Fexport%3Dview%26id%3D1RU0PXIMN3_oVHsNXNVrims81CZUDaSrY&_=2"
+    },
+    {
+        "category": "PLANNING",
+        "title" : "Planning2",
+        "text": "Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.",
+        "icon": "https://images.weserv.nl/?url=https%3A%2F%2Fdrive.google.com%2Fuc%3Fexport%3Dview%26id%3D1RU0PXIMN3_oVHsNXNVrims81CZUDaSrY&_=2"
+    },
+    {
+        "category": "PLANNING",
+        "title" : "Planning3",
+        "text": "Lorem ipsum dolor amet consectetur adipiscing elit sed eiusmod tempor incididunt ut labore.",
+        "icon": "https://images.weserv.nl/?url=https%3A%2F%2Fdrive.google.com%2Fuc%3Fexport%3Dview%26id%3D1RU0PXIMN3_oVHsNXNVrims81CZUDaSrY&_=2"
+    }
+]
